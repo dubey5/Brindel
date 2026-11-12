@@ -12,7 +12,7 @@ Brindel is a small clipboard history for macOS. It keeps your last five copies, 
 
 **[Download for macOS](https://github.com/dubey5/Brindel/releases/download/v0.1.0/Brindel_0.1.0_universal.dmg)** · [Website](https://dubey5.github.io/Brindel/) · [All releases](https://github.com/dubey5/Brindel/releases)
 
-> **Early preview.** Brindel is shared with a small group of testers and is not yet notarised by Apple, so macOS asks you to confirm the first launch. Installation steps are below.
+> **Signed and notarised by Apple.** Brindel 0.1.0 is an early release, so feedback is welcome. Installation steps are below.
 
 ---
 
@@ -51,11 +51,12 @@ You can also click a row to paste it, and click the star on a row to pin it.
 No Terminal is needed.
 
 1. **Download** `Brindel_0.1.0_universal.dmg` from the [latest release](https://github.com/dubey5/Brindel/releases/latest) and double-click it.
-2. **Drag Brindel** onto the Applications folder in the window that appears.
-3. **Open Brindel** from Applications. macOS says it cannot verify the app. Choose **Done**.
-4. **Approve the first launch.** Open **System Settings → Privacy & Security**, scroll to the Security section, choose **Open Anyway** beside Brindel, and confirm.
-5. **Allow two permissions.** Choose **Get started** on the welcome card. macOS asks to let Brindel control System Events, then for Accessibility. Allow both.
-6. **Restart Brindel once.** Choose **Quit Brindel** from its menu bar icon, then open it again. Press `Cmd` `Shift` `V` to try it.
+2. **Drag Brindel** onto the Applications folder in the window that appears. You can then eject the disk image.
+3. **Open Brindel** from Applications. macOS asks to confirm that it was downloaded from the Internet. Choose **Open**.
+4. **Allow two permissions.** Choose **Get started** on the welcome card, then allow both prompts: System Events and Accessibility.
+5. **Restart Brindel once.** Choose **Quit Brindel** from its menu bar icon, then open it again. Press `Cmd` `Shift` `V` to try it.
+
+If you used an earlier test build, macOS asks for the permissions once more.
 
 ### Why the permissions?
 
@@ -67,7 +68,7 @@ No Terminal is needed.
 ## Troubleshooting
 
 **Pasting does not work.**
-Open **System Settings → Privacy & Security → Accessibility** and check that Brindel is on. If it is on but still fails, select Brindel, press the minus (−) button to remove it, then quit and reopen Brindel and allow it again. This is most common right after installing an update.
+Open **System Settings → Privacy & Security → Accessibility** and check that Brindel is on. If it is on but still fails, select Brindel, press the minus (−) button to remove it, then quit and reopen Brindel and allow it again. 
 
 **The picker does not open.**
 Check that Brindel is running (look for its icon in the menu bar). If another app uses `Cmd` `Shift` `V`, quit that app or change its shortcut.
@@ -81,9 +82,9 @@ tail -n 10 ~/Library/Logs/Brindel.log
 
 The log contains technical messages about Brindel only, never the contents of your clipboard.
 
-## Updates during the preview
+## Updates
 
-Brindel is signed ad-hoc while it is in early preview. Each new version may ask you to switch Accessibility on again (see the first troubleshooting item). This ends once Brindel is signed with an Apple Developer ID and notarised.
+Brindel is signed with an Apple Developer ID and notarised, so new versions install the same way and should keep the permissions you already allowed. If pasting stops working after an update, see the first troubleshooting item.
 
 ## Privacy
 

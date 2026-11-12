@@ -205,7 +205,7 @@ footer a{color:var(--muted)}
             <div class="dots" id="heroDots" role="group" aria-label="Try an accent colour"></div>
           </div>
         </div>
-        <p class="notice"><strong>Early preview.</strong> Brindel is not yet notarised by Apple, so macOS asks you to confirm the first launch. <a href="#install">Here is how.</a></p>
+        <p class="notice"><strong>Signed and notarised by Apple.</strong> Installing takes two minutes and needs no Terminal. <a href="#install">See how.</a></p>
       </div>
 
       <div>
@@ -292,27 +292,25 @@ footer a{color:var(--muted)}
   <section id="install">
     <div class="sec-head">
       <h2>Installing takes two minutes</h2>
-      <p>Brindel is an early preview and is not yet notarised by Apple, so macOS asks you to confirm the first launch. You only do this once. No Terminal needed.</p>
+      <p>Brindel is signed and notarised by Apple, so installing is the usual drag to Applications. macOS asks you to confirm once that it was downloaded from the Internet. No Terminal needed.</p>
     </div>
     <ol class="steps">
       <li><div><h3>Open the download</h3><p>Double-click the Brindel disk image (.dmg) in your Downloads folder.</p></div></li>
-      <li><div><h3>Move it to Applications</h3><p>Drag the Brindel icon onto the Applications folder in the window that appears.</p></div></li>
-      <li><div><h3>Open Brindel</h3><p>Launch it from Applications. macOS says it cannot verify the app. Choose Done.</p></div></li>
-      <li><div><h3>Approve the first launch</h3><p>Open System Settings, then Privacy &amp; Security. Scroll to Security, choose Open Anyway beside Brindel, and confirm.</p></div></li>
-      <li><div><h3>Allow the two permissions</h3><p>Choose Get started on the welcome card. macOS asks to let Brindel control System Events, then for Accessibility. Allow both.</p></div></li>
-      <li><div><h3>Restart Brindel once</h3><p>Quit Brindel from its menu bar icon and open it again. Then press <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>V</kbd> to try it.</p></div></li>
+      <li><div><h3>Move it to Applications</h3><p>Drag the Brindel icon onto the Applications folder in the window that appears. You can then eject the disk image.</p></div></li>
+      <li><div><h3>Open Brindel</h3><p>Launch it from Applications. macOS asks to confirm that it was downloaded from the Internet. Choose Open.</p></div></li>
+      <li><div><h3>Allow the permissions</h3><p>Choose Get started on the welcome card, then allow the two prompts: System Events and Accessibility. Quit Brindel from its menu bar icon, open it again, and press <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>V</kbd>.</p></div></li>
     </ol>
-    <p class="after">During the preview, each new version may ask you to switch Accessibility on again. This ends once Brindel is notarised.</p>
+    <p class="after">If you used an earlier test build, macOS asks for the permissions once more. Updates are signed the same way, so you should not need to allow them again.</p>
   </section>
 
   <section id="faq">
     <div class="sec-head"><h2>Questions</h2></div>
     <div class="faq">
-      <details><summary>Why does macOS warn me before opening Brindel?</summary><p>Apple shows that warning for any app that has not been notarised through its paid developer programme. Brindel is in early preview and has not been through that yet. The steps above open it safely, and the warning goes away once Brindel is notarised.</p></details>
+      <details><summary>Why does macOS ask me to confirm before opening Brindel?</summary><p>macOS shows that message for every app downloaded from the Internet. Brindel is signed and notarised by Apple, which means Apple has checked it for known malware, so choose Open and it runs.</p></details>
       <details><summary>Why does Brindel need Accessibility access?</summary><p>To paste for you. After you choose an item, Brindel sends a Command+V key press to the app you were using. macOS only allows that when you have switched Accessibility on for the app.</p></details>
       <details><summary>Why does it ask about System Events?</summary><p>Brindel asks System Events which app is in front when you open the picker, so your paste lands where you were working. It does not read anything else.</p></details>
       <details><summary>Is my clipboard sent anywhere?</summary><p>No. Your history is stored on your Mac. Brindel has no account and does not send your clipboard anywhere.</p></details>
-      <details><summary>Pasting does not work. What now?</summary><p>Open System Settings, then Privacy &amp; Security, then Accessibility, and check that Brindel is on. If it is on but still fails, select it, press the minus button to remove it, then quit and reopen Brindel and allow it again. This is most common right after an update.</p></details>
+      <details><summary>Pasting does not work. What now?</summary><p>Open System Settings, then Privacy &amp; Security, then Accessibility, and check that Brindel is on. If it is on but still fails, select it, press the minus button to remove it, then quit and reopen Brindel and allow it again.</p></details>
       <details><summary>Which Macs does it run on?</summary><p>macOS 10.15 Catalina or later, on Apple Silicon and Intel Macs.</p></details>
       <details><summary>Is there a Windows or iPhone version?</summary><p>Windows is planned for later. An iPhone version is not planned at this time.</p></details>
     </div>
